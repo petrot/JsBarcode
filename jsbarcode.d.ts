@@ -24,7 +24,7 @@ declare namespace JsBarcode {
   interface NodeOptions extends BaseOptions {
     xmlDocument?: XMLDocument;
   }
-  
+
   interface Code128Options extends BaseOptions {
     ean128?: boolean;
   }
@@ -47,6 +47,7 @@ declare namespace JsBarcode {
     render(): void;
     CODE39(value: string, options?: BaseOptions): api;
     CODE128(value: string, options?: Code128Options): api;
+    CODE128BCB(value: string, options?: Code128Options): api;
     CODE128A(value: string, options?: Code128Options): api;
     CODE128B(value: string, options?: Code128Options): api;
     CODE128C(value: string, options?: Code128Options): api;
